@@ -1,3 +1,5 @@
+import 'package:ahmetgezmen/constant/constant.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
@@ -6,6 +8,14 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text(BaseConstant.webTitle),
+      ),
+      // body: Placeholder(),
+      body: Center(
+        child: Text("Home Page"),
+      ),
+    );
   }
 }
